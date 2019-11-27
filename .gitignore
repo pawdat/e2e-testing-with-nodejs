@@ -1,0 +1,8 @@
+custom-stack/mochawesome-report
+nightwatchjs/tests_output
+nightwatchjs/chromedriver.log
+custom-stack/node_modules
+nightwatchjs/node_modules
+testcafe/node_modules
+webdriverio/node_modules
+.idea

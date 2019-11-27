@@ -1,0 +1,13 @@
+{
+  "name": "e2e-testcafe",
+  "version": "1.0.0",
+  "description": "End to End testing - Test Café",
+  "scripts": {
+    "build": "tsc",
+    "test": "testcafe chrome --ts-config-path tsconfig.json tests/"
+  },
+  "devDependencies": {
+    "testcafe": "^1.7.0",
+    "typescript": "^3.7.2"
+  }
+}

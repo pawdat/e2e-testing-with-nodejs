@@ -1,0 +1,12 @@
+{
+  "name": "e2e-nightwatchjs",
+  "version": "1.0.0",
+  "description": "End to End testing - NightwatchJS",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "nightwatch": "^1.3.1"
+  }
+}
