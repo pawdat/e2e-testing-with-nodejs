@@ -10,27 +10,28 @@ module.exports = {
       .url(url)
       .closeBanners()
       .assert.containsText(headlineSelector, 'Son Haberler')
-      // .end();
+      .end();
   },
   'find and check top news widget': (browser) => {
+    browser.url(url).closeBanners();
     browser.expect.element(topNewsSelector).to.be.visible;
+    // browser.expect.elements(topNewsCardSelector).count.to.equal(13);
+    // browser.expect.elements(topNewsPrimaryCardSelector).count.to.equal(1);
+    browser.end();
+  },
+  'find and check visibility of top news widget': (browser) => {
+    browser.url(url).closeBanners();
+    browser.expect.element(topNewsSelector).to.be.visible;
+    browser.end();
+  },
+  'find and check count of news cards': (browser) => {
+    browser.url(url).closeBanners();
     browser.expect.elements(topNewsCardSelector).count.to.equal(13);
+    browser.end();
+  },
+  'find and check count of primary news cards': (browser) => {
+    browser.url(url).closeBanners();
     browser.expect.elements(topNewsPrimaryCardSelector).count.to.equal(1);
     browser.end();
   },
-  // 'find and check visibility of top news widget': (browser) => {
-  //   // browser.url(url).closeBanners();
-  //   browser.expect.element(topNewsSelector).to.be.visible;
-  //   // browser.end();
-  // },
-  // 'find and check count of news cards': (browser) => {
-  //   // browser.url(url).closeBanners();
-  //   browser.expect.elements(topNewsCardSelector).count.to.equal(13);
-  //   // browser.end();
-  // },
-  // 'find and check count of primary news cards': (browser) => {
-  //   // browser.url(url).closeBanners();
-  //   browser.expect.elements(topNewsPrimaryCardSelector).count.to.equal(1);
-  //   browser.end();
-  // },
 };

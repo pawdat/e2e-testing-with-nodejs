@@ -12,11 +12,10 @@ process.on('unhandledRejection', () => {});
   try {
     describe('Home page test suite', async function () {
       this.timeout(50000);
-      let driver, page;
+      let page;
 
       before(async () => {
         page = new Page();
-        driver = page.driver;
         await page.visit('https://www.mackolik.com/?google_norender=true');
         await page.closeCookieAndLegacyBanners();
       });
@@ -48,7 +47,5 @@ process.on('unhandledRejection', () => {});
     });
   } catch (ex) {
     console.log (new Error(ex.message));
-  } finally {
-
   }
 })();

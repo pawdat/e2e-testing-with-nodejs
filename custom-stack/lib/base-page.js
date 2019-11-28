@@ -29,7 +29,7 @@ class Page {
   async closeCookieAndLegacyBanners() {
     const buttons = await this.findBySelector([
       legacyBannerCloseSelector,
-      gpdrBannerCloseSelector
+      gpdrBannerCloseSelector,
     ].join(','));
 
     buttons.forEach((button) => {
