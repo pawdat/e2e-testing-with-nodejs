@@ -1,0 +1,14 @@
+{
+  "name": "e2e-pupeteer",
+  "version": "1.0.0",
+  "description": "End to End testing - Pupeteer",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.2",
+    "puppeteer": "^2.0.0"
+  }
+}

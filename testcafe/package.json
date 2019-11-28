@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "End to End testing - Test Café",
   "scripts": {
-    "build": "tsc",
     "test": "testcafe chrome --ts-config-path tsconfig.json tests/"
   },
   "devDependencies": {

@@ -5,4 +5,5 @@ custom-stack/node_modules
 nightwatchjs/node_modules
 testcafe/node_modules
 webdriverio/node_modules
+pupeteer/node_modules
 .idea
